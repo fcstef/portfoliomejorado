@@ -1,0 +1,255 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #333; /* Mismo color que el footer */
+    color: #fff; /* Mantener el texto blanco para contraste */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+
+header .btn {
+    background: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: #4CAF50;
+}
+
+/* Secciones */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Grid de proyectos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* -------- Responsive Design -------- */
+
+/* Dispositivos pequeños (teléfonos) */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 20px 10px;
+    }
+
+    header .btn {
+        display: block;
+        margin: 20px auto;
+    }
+
+    /* Navegación */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    /* Proyectos */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Dispositivos medianos (tablets) */
+@media (max-width: 992px) {
+    /* Header */
+    header {
+        padding: 30px 15px;
+    }
+
+    /* Proyectos */
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Dispositivos grandes (pantallas grandes) */
+@media (min-width: 1200px) {
+    /* Header */
+    header {
+        padding: 50px 40px;
+    }
+
+    /* Proyectos */
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+/* Estilo para la Sección de Curriculum */
+.curriculum-summary, .curriculum-details {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.curriculum-summary h3, .curriculum-details h3 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.curriculum-summary p, .curriculum-details ul {
+    font-size: 1rem;
+    color: #666;
+}
+
+.curriculum-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.curriculum-details li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.curriculum-download {
+    margin-top: 20px;
+}
+
+.curriculum-download .btn {
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+.curriculum-download .btn:hover {
+    background: #45a049;
+}
+
+/* Diseño Responsive */
+@media (max-width: 768px) {
+    .curriculum-summary, .curriculum-details {
+        padding: 15px;
+    }
+
+    .curriculum-summary h3, .curriculum-details h3 {
+        font-size: 1.3rem;
+    }
+
+    .curriculum-details li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilo para la Sección de Servicios */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    .services-container {
+        padding: 10px;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+    }
+}
